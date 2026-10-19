@@ -14,11 +14,12 @@ def find(unit, space):
 
 def main():
 	array = [1, [[2], 3], 4]
+	print("The space is: ", end="\n")
 	print(array)
 	for i in range(1, 5):
-		print(i)
+		print("The coordinate of "+str(i)+" are: ", end="")
 		for x in find(i, array):
-			print(x[::-1])
+			print(x[::-1], end="\n")
 
 if __name__ == "__main__":
 	main()
